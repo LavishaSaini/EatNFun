@@ -1,162 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EatNFun</title>
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>icecream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<!-- Nav Bar (Dark Mode button) -->
-<body class="light-mode">
-    <nav class="light-mode" id="navbar">
-        <a href="#"><img src="images/logo.png" id="logo" alt="Logo"></a>
-        <div class="nav-center">
-          <div class="nav-elem">
-            <a href="#">Home</a>
-          </div>
-          <div class="nav-elem">
-            <a href="#">Services</a>
-            <div class="dropdown">
-              <a href="#">Serve Coffee</a>
-              <a href="#">Support</a>
-              <a href="#">Counter Service </a>
+<body>
+    <header>
+                <div> 
+                <nav class="navbar section-content">
+                   <h1 class="logo-text"> Icecream</h1>
+                        <div class="nav-item">
+                            <div class="nav-menu">
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#service">Buy icecream</a>
+                                 <a href="#contact">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </div>
-          <div class="nav-elem">
-            <a href="#">Products</a>
-            <div class="dropdown">
-              <a href="#">Shakes</a>
-              <a href="#">Cold Coffee</a>
-              <a href="#">Ginger Tea</a>
+        </header>
+    <section  id="home">
+        <div class="hero">
+            <h1>Icecream</h1>
+            <h2>icecream is a place where you can get the best icecream in the world</h2>
+            <button><a href="#service" class="btn">order now</a></button>
             </div>
-          </div>
-          <div class="nav-elem">
-            <a href="about.html">About Us</a>
-          </div>
-          <div class="nav-elem">
-            <a href="Contact_Us/contact.html">Contact</a>
-          </div>
+    </section>
+     <section class="About" id="about">
+        <div class="main">
+            <img src="Assets/img3.jpg" >
+           <div class="About-text">
+                <h1>About us</h1>
+                <h3>Offer Icecream</h3>
+                <p>icecream is a place where you can get the best icecream in the world.We have a variety of icecream flavors that you can choose from.We also have a variety of toppings that you can add to your icecream. 
+                     We have been in business for over 10 years and we have a lot of satisfied customers. We are located in the heart of the city and we are open 7 days a week.
+                       So come on down and try our delicious icecream today!</p>
+                       <button><a href="#contact" class="btn">contact me</a></button>
+           </div>
         </div>
-        <button id="mode-toggle">🌙</button>
-      </nav>
+     </section>
+  
 
-    <div class="btn"></div>
-    <button id="connect-button onclick="calender()">Connect<br>
-        <i class="fa fa-pencil" style="font-size:24px"></i>
-    </button>
-
+     <div class="service" id="service">   
+        <div class="box1 box">
+            <div class="box-content">
+                <h2> Banana dry fruit icecream</h2>
+                <div class="box-img" style="background-image: url('Assets/img10.jpg');"></div>
+                <h4>Up to 10% OFF for Banana mixed dryfruit icecream (100ml)</h4>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>299.00</p>
+                <div onclick="buyDone()" class="more">buy now</div>
+                <div class="cdrt">
+                <div onclick="buyAdd()" class="cart">add to cart</div>
+            </div>
+        </div>
     </div>
-
-<!--Home Page  -->
-    <div class="cardContainer">
-        <div class="cardWhole" id="cardWhole1" href=#cardContainer>
-            <span id="cardDown" class="card">
-                <p class="mainPageText">Home</p>
-            </span>
-            <span id="cardUp" class="card">
-            </span>
-        </div>
-
-        <div class="cardWhole" id="cardWhole2" onclick="myFunction1()">
-            <span id="cardDown" class="card popuptext">
-                <div class="popup">
-                    <span class="popuptext" id="myPopup1">Manager : 102894798!</span>
+   
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Butterscotch icecream</h2>
+                <div class="box-img" style="background-image: url('Assets/img2.jpg');"></div>
+                <h4>Butterscotch flavoured icecream enjoy frozen desert-145ml</h4>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>243.44</p>
+                <div onclick="buyDone()" class="more">buy now</div>
+                <div class="cdrt">
+                    <div onclick="buyAdd()" class="cart">add to cart</div>
                 </div>
-                <p class="mainPageText">Contact</p>
-            </span>
-            <span id="cardUp" class="card">
-            </span>
-        </div>
-
-
-        <div class="cardWhole" id="cardWhole3" onclick="menu()">
-            <span id="cardDown" class="card">
-                <p class="mainPageText">Menu</p>
-            </span>
-            <span id="cardUp" class="card">
-            </span>
-        </div>
-
-        <div class="cardWhole" id="cardWhole4">
-            <span id="cardDown" class="card">
-                <p class="mainPageText">Games</p>
-            </span>
-            <span id="cardUp3" class="card">
-            </span>
-        </div>
-
-        <div class="cardWhole" id="cardWhole5" onclick="myFunction3()">
-            <span id="cardDown" class="card popuptext">
-                <div class="popup">
-                    <span class="popuptext" id="myPopup3">30% off with codedex club membership!</span>
-                </div>
-
-                <p class="mainPageText">Events</p>
-            </span>
-            <span id="cardUp3" class="card">
-            </span>
-
-        </div>
-
-        <div class="cardWhole" id="cardWhole6" onclick="myFunction2()">
-            <span id="cardDown" class="card">
-                <div class="popup" onclick="myFunction()">
-                    <span class="popuptext" id="myPopup2">A place best for everyone to enjoy and have fun!</span>
-            </span>
-        </div>
-        <p class="mainPageText">About</p>
-        </span>
-        <span id="cardUp3" class="card">
-        </span>
-    </div>
-    </div>
-
-    
-    <!-- card  -->
-    <div class="menu-container" style="margin-top: 20%;">
-        <h1 class="menu-title">Cafeteria Menu</h1>
-        <div id="categoryButtons" class="category-buttons"></div> <!-- Category buttons here -->
-        <div id="menuGrid" class="menu-grid"></div> <!-- Menu items grid here -->
-    </div>
-
-
-    <br><br><br><br>
-
-<!--     Footer  -->
-    <footer class="footer">
-        <div class="footer-content">
-            <h2 class="brand-name">EatNFun</h2>
-            <br><br>
-            <div class="social-icons">
-
-               <a href="https://www.facebook.com/" class="social-icon"><i class='bx bxl-facebook'></i></a>
-                <a href="https://x.com/" class="social-icon"><img src="twitter-x.png" alt="Social Icon" ></a>
-                <a href="https://www.instagram.com/" class="social-icon"><i class='bx bxl-instagram'></i></a>
-                <a href="https://in.linkedin.com/" class="social-icon"><i class='bx bxl-linkedin'></i></a>
-
             </div>
-            <button id="scrollBtn"><i class="bx bx-up-arrow-alt"></i></button>
         </div>
-        <p class="footer-bottom-text">© 2024 EatNFun. All Rights Reserved.</p>
-    </footer>
 
-<!--Script tags  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2> Strawberry icecream</h2>
+                <div class="box-img" style="background-image: url('Assets/img3.jpg');"></div>
+                <h4> strawberry frozen dessert ice cream summer fun! (300ml)</h4>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>500.99</p>
+                <div onclick="buyDone()" class="more">Buy now</div>
+                <div class="cdrt">
+                    <div onclick="buyAdd()" class="cart">add to cart</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box4 box">
+            <div class="box-content">
+                <h2> Chocolate icecream</h2>
+                <div class="box-img" style="background-image: url('Assets/img4.jpg');"></div>
+                <h4>Amul Ice Cream - Chocolate Brownie cream cup (1l Tub) </h4>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>800.99</p>
+                <div onclick="buyDone()" class="more">Buy now</div>
+                <div class="cdrt">
+                    <div onclick="buyAdd()" class="cart">add to cart</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box5 box">
+            <div class="box-content">
+                <h2> Vanilla icecream</h2>
+                <div class="box-img" style="background-image: url('Assets/img5.jpg');"></div>
+                <h4> Up to 25% OFF for top vanilla tasty ice cream  brands (175ml)</h4>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>399.48</p>
+                <div onclick="buyDone()" class="more">Buy now</div>
+                <div class="cdrt">
+                    <div onclick="buyAdd()" class="cart">add to cart</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box6 box">
+            <div class="box-content">
+                <h2> Pista icecream</h2>
+                <div class="box-img" style="background-image: url('Assets/img9.jpg');"></div>
+                <h4> A luxury blend of Iranian Pista offering the taste of royalty (50ml)</h4>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>1203.49</p>
+                <div onclick="buyDone()" class="more">Buy now</div>
+                <div class="cdrt">
+                    <div onclick="buyAdd()" class="cart">add to cart</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box7 box">
+            <div class="box-content">
+                <h2> Mango icecream</h2>
+                <div class="box-img" style="background-image: url('Assets/img7.jpg');"></div>
+                <h4> Buy Scoops Mango Ice Cream online at lowest price from bigbasket  (300ml)</h4>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>341.62</p>
+                <div onclick="buyDone()" class="more">Buy now</div>
+                <div class="cdrt">
+                    <div onclick="buyAdd()" class="cart">add to cart</div>
+            </div>
+        </div>
+    </div>
+
+        <div class="box8 box">
+            <div class="box-content">
+                <h2>Cherry Berry icecream</h2>
+                <div class="box-img" style="background-image: url('Assets/img8.jpg');"></div>
+                <h4> Cherry Berry flavour  icecream delight your taste buds. (500ml)</h4>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i>990.99</p>
+                <div onclick="buyDone()" class="more">Buy now</div>
+                <div class="cdrt">
+                    <div onclick="buyAdd()" class="cart">add to cart</div>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script src="script.js"></script>
-    <script src="dark.js"></script>
-    <script src="menu.js"></script>
+<div class="contact"id="contact">
+    <div class="contact-text">
+        <h1>Contact us</h1>
+    </div>
+    <p>Thank you for visiting our website. We hope you enjoyed your time here and found what you were looking for. 
+        We are always looking for ways to improve our website and make it more user-friendly. 
+        If you have any suggestions or feedback, please let us know. We would love to hear from you! 
+    </p>
+    <div class="contact-form">
+        <h3>Send Me Msg</h3>
+        <div class="msg">
+            <input type="text" name="name" placeholder=" your name">
+        </div>
+        <div class="msg">
+            <input type="email" name="email" placeholder=" your email">
+        </div>
+        <div class="msg">
+            <textarea name="message" rows="10" placeholder=" enter the message"></textarea>
+        </div>
+       
+        <button onclick="buysubmit()" class="submit">
+            Submit</button>
+
+        <div class="info">
+            <h3>Contact info</h3>
+            <p><i class="fa-sharp fa-solid fa-location-dot"></i>Address: 123 Main Street, New York, NY 10001</p>
+            <p><i class="fa-solid fa-phone"></i>Phone: 123-456-7890</p>
+            <p><i class="fa-sharp fa-solid fa-envelope"></i>Email:info@example.com</p>
+        </div>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</div>
 </body>
+<script src="script.js"></script>
 
 </html>
